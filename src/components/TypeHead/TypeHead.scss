@@ -1,0 +1,79 @@
+.type-head {
+	position: relative;
+    width: 30%;
+    text-align: left;
+	input {
+		width: 100%;
+		padding: 1rem 1rem;
+		border: none;
+		border-radius: 0.25rem;
+		&:focus {
+			border: none;
+			outline: 0;
+		}
+	}
+	.clear-search {
+		position: absolute;
+		// color: #ffffff;
+		font-size: 1rem;
+		// padding: 1rem;
+		top: 12px;
+		right: -20px;
+    }
+    .search-result-holder{
+        position:absolute;
+        max-height: 500px;
+        overflow: auto;
+        top: 50px;
+        width: 100%;
+        border-radius:0.25rem;
+        box-shadow:  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+        color: #000000;
+        z-index: 99999;
+        background-color: #ffffff;
+        .search-result-item{
+            cursor: pointer;
+            display: block;
+            border-radius:0.25rem;
+            padding: 1rem;
+            text-decoration: none;
+            color:#000000;
+            &:hover{
+                background: rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888; 
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+}
+@media only screen and (max-width: 767px) {
+	.type-head {
+		width: 90%;
+	}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	.type-head {
+		width: 50%;
+	}
+}

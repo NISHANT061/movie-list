@@ -1,0 +1,26 @@
+.app-banner{
+    background-color: #000000;
+    color:#FFFFFF;
+    padding:3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .app-name{
+        font-weight: bold;
+        font-size:3rem;
+        margin:1rem 1rem 0 1rem;
+    }
+    .app-subtitle{
+        font-weight: lighter;
+        margin-bottom: 1rem;
+    }
+    @media only screen and (max-width: 767px) {
+        .app-name{
+           font-size: 1rem;
+       }
+       .app-subtitle{
+           font-size: 0.875rem;
+       }
+     }
+}
